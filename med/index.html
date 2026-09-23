@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Practice Repo</title>
+    
+    <!-- CSS Styling -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f4f8;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .content-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #3498db;
+        }
+
+        video, audio {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+        
+        /* Example of actual "inline" styling on a single element */
+        .highlight-text {
+            color: #e74c3c;
+            font-weight: bold;
+            background-color: #ffeaa7;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Practice Repo</h1>
+        <p>Testing HTML, CSS, and Folder Paths</p>
+    </header>
+
+    <!-- Image Section -->
+    <div class="content-box">
+        <h2>Image from the 'images' folder</h2>
+        <!-- Make sure you have an image named 'photo.jpg' inside your images folder -->
+        <img src="images/med.jpg" alt="A sample image from the images folder">
+    </div>
+
+    <!-- Media Section -->
+    <div class="content-box">
+        <h2>Media from the 'med' folder</h2>
+        
+        <!-- Video from med folder -->
+        <h3>Video</h3>
+        <!-- Make sure you have a video named 'video.mp4' inside your med folder -->
+        <video controls>
+            <source src="med/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <br><br>
+
+        <!-- Audio from med folder -->
+        <h3>Audio</h3>
+        <!-- Make sure you have an audio file named 'audio.mp3' inside your med folder -->
+        <audio controls>
+            <source src="med/audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <div class="content-box">
+        <p>This is a test paragraph.</p>
+        <!-- Example of strict inline styling using the style="" attribute -->
+        <span class="highlight-text" style="font-style: italic;">This text uses both internal and inline CSS!</span>
+    </div>
+
+</body>
+</html>
